@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Humanity</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/demo.css" />
+        <link rel="stylesheet" href="css/testimonial.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class="header container">
+      <div class="visible-xs visible-sm col-xs-12 col-sm-12 text-center sm-logo">
+        <a rel="home" href="index.html">
+          <img src="img/logo.png" width="200" alt="logo">
+        </a>
+      </div>
+    </div>
+        <div class="navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <li class= "hidden-xs hidden-sm">
+                     <a rel="home" href="index.html"><font size=40%>PRAGATI</font></a>
+                    </li>
+                
+                    <li class="selected"><a href="#">Autism Video Tutorial</a></li>
+                </ul>
+            </div>
+        </div>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<div style="text-align:center"> 
+  <button class = "button" onclick="playPause()">Play/Pause</button> 
+  <button class = "button" onclick="makeBig()">Big</button>
+  <button class = "button" onclick="makeSmall()">Small</button>
+  <button class = "button" onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="test.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video><br><br>
+  <center><button class = "button"><a href="quiz-xl.html">TAKE A TEST </a></button></center>
+</div> 
+
+
+
+
+
+
+
+
+<script> 
+var myVideo = document.getElementById("video1");
+
+var myVar = setInterval(myTimer, 10000);
+var myVar1 = setInterval(playAudio,13000);
+var i = 0;
+
+message = 'What you need to Open for Starting Excel ? <br>';
+ques2 = "What you need to Open for Starting Excel ? <br>  <form><input type='radio' name='gender' value='male' onclick = 'yes()'> Double click on the icon<br><input type='radio' name='gender' value='female' onclick = 'no()'> Click on paint icon to open Excel <br><input type='radio' name='gender' value='other' onclick = 'no()'> Drag the icon to trash can</form>";
+ques3 = "1.....2.....3...4 how ?";
+ques4 = "1 + 2 = 3 how ??";
+ques5 = "";
+
+
+function yes(){
+  alert("Correct");
+}
+function no(){
+  alert("Wrong");
+  var val = -10;
+  myVideo.currentTime += val;
+}
+function myTimer() {
+	playPause();
+    //alert(message);
+    i = i + 1;
+	if(i == 1) message = ques2;
+	if(i == 2) message = ques3;
+	if(i == 3) message = ques4;
+  if(i == 4) message = ques5;
+
+  document.getElementById('div1').innerHTML+='<div id="light" class="white_content">'+message+' <a href="javascript:void(0)" onclick="closeit()">Close</a></div>';
+
+  document.getElementById('light').style.display='block';
+}
+
+function closeit(){
+  document.getElementById('light').style.display='none';
+  var parent = document.getElementById("div1");
+  var child = document.getElementById("light");
+  parent.removeChild(child);
+}
+
+function playPause() { 
+    if (myVideo.paused) myVideo.play(); 
+    else myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 760; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+</script> 
+
+
+
+<audio id="myAudio">
+  <source src="alarm.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div id = "div1">
+	
+</div>
+
+<!--<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p> -->
+
+
+<!-- ============FOOTER============= -->
+
+    
+    <footer id="footer"> 
+        <div class="footer-content container">
+          <div class="footer-adress text-center col-xs-12 col-sm-4 col-md-4">
+                <h4></h4>
+                <ul class="footer-menus">
+                  <li></li>
+                  <li> </li><br />
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+            </div>
+            <div class="footer-second col-xs-12 col-sm-4 col-md-4">
+              <div class="social-block text-center">
+                <div class="social-share">
+                  <i class="fa fa-2x fa-facebook"></i>
+                  <i class="fa fa-2x  fa-twitter"></i>
+                  <i class="fa fa-2x  fa-google-plus"></i>
+                  <i class="fa fa-2x  fa-instagram"></i>
+                </div>
+              </div>
+               <p class="text-center footer-text1">123 456 7890</p>
+                <p class="text-center footer-text"></p></div>
+            <div class="footer-third col-xs-12 col-sm-4 col-md-4">
+              <div class="copyright">
+                  <span></span><br>
+                  <span></span>
+              </div>
+            </div>
+        </div>
+        <div class="move-top-page">
+      </div>
+    </footer>
+
+  <!-- script references -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nav-hover.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Place in the <head>, after the three links -->
+    <script>
+     $('.testimonials-slider').bxSlider({
+      slideWidth: 800,
+      minSlides: 1,
+      maxSlides: 1,
+      slideMargin: 32,
+      auto: true,
+      autoControls: true
+      });
+    </script>
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>

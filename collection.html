@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Humanity</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/demo.css" />
+        <link rel="stylesheet" href="css/testimonial.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class="header container">
+      <div class="visible-xs visible-sm col-xs-12 col-sm-12 text-center sm-logo">
+        <a rel="home" href="index.html">
+          <img src="img/logo.png" width="200" alt="logo">
+        </a>
+      </div>
+    </div>
+        <div class="navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <li class= "hidden-xs hidden-sm">
+                     <a rel="home" href="index.html"><font size=40%>PRAGATI</font></a>
+                    </li>
+                    
+                    <li class="selected"><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    
+      <div class="fun-fact col-md-12">
+        <div class="stat">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="milestone-counter">
+                    <i class="fa fa-user fa-3x"></i>
+                    
+                    <div class="milestone-details"><a href="www.google.com">CP</a></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="milestone-counter">
+                    <i class="fa fa-coffee fa-3x"></i>
+                    
+                     <div class="milestone-details"><a href="www.google.com">Autistic</a></div>
+                </div>
+            </div>
+            
+    </div><!-- stat -->
+  </div>
+
+    
+    <!-- script references -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/nav-hover.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+        <script src="js/main.js"></script>
+    <!-- Place in the <head>, after the three links -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                //Check to see if the window is top if not then display button
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) {
+                        $('.button-totop').fadeIn();
+                    } else {
+                        $('.button-totop').fadeOut();
+                    }
+                });
+
+                //Click event to scroll to top
+                $('.button-totop').click(function(){
+                    $('html, body').animate({scrollTop : 0},800);
+                    return false;
+                });
+
+            });
+        </script>
+    </body>
+</html>

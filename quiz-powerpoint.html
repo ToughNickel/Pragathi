@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    max-width:100%;
+max-height:100%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+table#albums 
+{
+    border-collapse:separate;
+    border-spacing:20px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 50%;
+    }
+}
+</style>
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>multiple-choice quiz form</title>
+</head>
+<body bgcolor=#20B2AA>
+
+<h3 style="font-size:36px;" align="middle">MS Powerpoint quiz</h3>
+
+<form method="post" action="mailto:raizen@mail.utexas.edu?subject=Basics Excel Quiz 1" enctype="text/plain">
+<P>1.Choose the most suitable option for the following question:" The correct way to make a new powerpoint slide is":</p>
+<table align="center" id="albums" cellspacing="0">
+<tr class="spaceUnder">
+<td >
+<input type="radio"onclick="myFunction1()"  /> <img src="A3.gif" width="300" height="200" align="middle">
+<input type="radio"onclick="myFunction()"  /> <img src="B3.gif" width="300" height="200" align="middle">
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio"onclick="myFunction()"  /> <img src="C3.gif" width="300" height="200" align="middle">
+<input type="radio"onclick="myFunction()"  /> <img src="D3.gif" width="300" height="200" align="middle">
+</td>
+</tr>
+</table>
+
+
+<script>
+function myFunction() {
+	window.open('new1.html','_self');
+return true;
+	
+}
+function myFunction1() {
+   
+	window.open('new.html','_self');
+return true;
+	
+}
+function nextq() {
+   window.open('quiz-object.html','_self');
+return true;
+	
+}
+</script></p> 
+</form>
+<center><button  type="button" class="button" onclick="nextq()" >Next </button></center>
+
+</body>
+</html>
